@@ -1,0 +1,125 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio de Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio-sesion">Inicio de Sesión</a></li>
+                <li><a href="#registro">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio-sesion">
+            <h2>Inicio de Sesión</h2>
+            <form id="form-inicio-sesion">
+                <label for="usuario">Usuario:</label>
+                <input type="text" id="usuario" name="usuario"><br><br>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena"><br><br>
+                <input type="submit" value="Iniciar Sesión">
+            </form>
+        </section>
+        <section id="registro">
+            <h2>Registro</h2>
+            <form id="form-registro">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"><br><br>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido"><br><br>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo"><br><br>
+                <label for="contrasena-registro">Contraseña:</label>
+                <input type="password" id="contrasena-registro" name="contrasena-registro"><br><br>
+                <input type="submit" value="Registrarse">
+            </form>
+        </section>
+        <section id="renglones-editables">
+            <h2>Renglones Editables</h2>
+            <form id="form-renglones-editables">
+                <label for="renglon1">Renglón 1:</label>
+                <input type="text" id="renglon1" name="renglon1"><br><br>
+                <label for="renglon2">Renglón 2:</label>
+                <input type="text" id="renglon2" name="renglon2"><br><br>
+                <label for="renglon3">Renglón 3:</label>
+                <input type="text" id="renglon3" name="renglon3"><br><br>
+                <input type="submit" value="Guardar Cambios">
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+CSS (en archivo styles.css)
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    background-color: #f7f7f7;
+    padding: 1em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%;
+    height:
